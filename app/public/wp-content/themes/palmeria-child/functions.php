@@ -13,5 +13,3 @@ function my_theme_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 }
-
-add_action( 'after_setup_theme', 'twentyseventeen_default_header' );
