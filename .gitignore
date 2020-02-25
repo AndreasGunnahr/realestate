@@ -1,3 +1,5 @@
 
 app/sql
 conf/php
+
+logs/php/error.log
