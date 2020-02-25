@@ -1,12 +1,9 @@
 <?php
 /**
- * Template part for displaying page content in template-front-page.php
+ * Template part for displaying page content in template-front-page.php.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Palmeria
+ * @see https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -16,10 +13,10 @@
 
         <div class="wrapper">
             <header class="entry-header">
-                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
             </header><!-- .entry-header -->
             <?php
-            if(has_excerpt()):
+            if (has_excerpt()):
             ?>
                 <div class="page-excerpt">
                     <?php
@@ -34,7 +31,7 @@
     </div>
 
     <?php
-    if(is_active_sidebar('sidebar-front-page')):
+    if (is_active_sidebar('sidebar-front-page')):
     ?>
     <div class="front-page-sidebar">
         <?php
@@ -50,10 +47,10 @@
             <?php
             the_content();
 
-            wp_link_pages( array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'palmeria' ),
-                'after'  => '</div>',
-            ) );
+            wp_link_pages(array(
+                'before' => '<div class="page-links">'.esc_html__('Pages:', 'palmeria'),
+                'after' => '</div>',
+            ));
             ?>
         </div><!-- .entry-content -->
     </div>
@@ -62,14 +59,14 @@
         palmeria_child_pages_list();
     ?>
 
-    <?php if ( get_edit_post_link() ) : ?>
+    <?php if (get_edit_post_link()) : ?>
         <footer class="entry-footer">
             <?php
             edit_post_link(
                 sprintf(
                     wp_kses(
                     /* translators: %s: Name of current post. Only visible to screen readers */
-                        __( 'Edit <span class="screen-reader-text">%s</span>', 'palmeria' ),
+                        __('Edit <span class="screen-reader-text">%s</span>', 'palmeria'),
                         array(
                             'span' => array(
                                 'class' => array(),
