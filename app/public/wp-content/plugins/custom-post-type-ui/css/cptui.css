@@ -154,7 +154,8 @@
 .about-wrap .feature-rest div {
   width: 50% !important;
   padding-right: 100px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 !important;
 }
 
@@ -210,11 +211,19 @@
 
 .about-wrap .cptui-about-text {
   margin-bottom: 1em !important;
-  margin-right: 0px;
+  margin-right: 0;
   max-width: calc(100% - 173px);
 }
 
+.email-octopus-form-row input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
 .email-octopus-form-row input:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.email-octopus-form-row input::-ms-input-placeholder {
   color: #cccccc;
 }
 
@@ -223,10 +232,13 @@
 }
 
 .cptui-intro-devblock {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #togglelabels {
@@ -256,7 +268,8 @@ fieldset .cptui-help {
 }
 
 .cptui-help:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #toplevel_page_cptui_main_menu img {
@@ -302,25 +315,33 @@ fieldset .cptui-help {
 
 .wdspromos-about {
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
   -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
   margin: 20px 0;
 }
 
 .wdspromos-about a:nth-child(1) {
   -ms-flex-order: 0;
-  order: 0;
+  -webkit-box-ordinal-group: 1;
+          order: 0;
   -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
+  -webkit-box-flex: 0;
+          flex: 0 1 auto;
+  -webkit-align-self: auto;
   -ms-flex-item-align: auto;
       -ms-grid-row-align: auto;
       align-self: auto;
@@ -328,9 +349,12 @@ fieldset .cptui-help {
 
 .wdspromos-about a:nth-child(2) {
   -ms-flex-order: 0;
-  order: 0;
+  -webkit-box-ordinal-group: 1;
+          order: 0;
   -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
+  -webkit-box-flex: 0;
+          flex: 0 1 auto;
+  -webkit-align-self: auto;
   -ms-flex-item-align: auto;
       -ms-grid-row-align: auto;
       align-self: auto;
@@ -338,9 +362,12 @@ fieldset .cptui-help {
 
 .wdspromos-about a:nth-child(3) {
   -ms-flex-order: 0;
-  order: 0;
+  -webkit-box-ordinal-group: 1;
+          order: 0;
   -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
+  -webkit-box-flex: 0;
+          flex: 0 1 auto;
+  -webkit-align-self: auto;
   -ms-flex-item-align: auto;
       -ms-grid-row-align: auto;
       align-self: auto;
@@ -416,3 +443,4 @@ fieldset .cptui-help {
     width: 100%;
   }
 }
+/*# sourceMappingURL=cptui.css.map */
