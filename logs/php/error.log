@@ -88,3 +88,40 @@
 [25-Feb-2020 13:47:28 UTC] PHP   6. do_action() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-settings.php:507
 [25-Feb-2020 13:47:28 UTC] PHP   7. WP_Hook->do_action() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/plugin.php:478
 [25-Feb-2020 13:47:28 UTC] PHP   8. WP_Hook->apply_filters() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/class-wp-hook.php:312
+[25-Feb-2020 13:51:02 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'twentyseventeen_default_header' not found or invalid function name in /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/class-wp-hook.php on line 288
+[25-Feb-2020 13:51:02 UTC] PHP Stack trace:
+[25-Feb-2020 13:51:02 UTC] PHP   1. {main}() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/index.php:0
+[25-Feb-2020 13:51:02 UTC] PHP   2. require() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/index.php:17
+[25-Feb-2020 13:51:02 UTC] PHP   3. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-blog-header.php:13
+[25-Feb-2020 13:51:02 UTC] PHP   4. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-load.php:37
+[25-Feb-2020 13:51:02 UTC] PHP   5. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-config.php:90
+[25-Feb-2020 13:51:02 UTC] PHP   6. do_action() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-settings.php:507
+[25-Feb-2020 13:51:02 UTC] PHP   7. WP_Hook->do_action() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/plugin.php:478
+[25-Feb-2020 13:51:02 UTC] PHP   8. WP_Hook->apply_filters() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/class-wp-hook.php:312
+[25-Feb-2020 13:51:32 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'twentyseventeen_default_header' not found or invalid function name in /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/class-wp-hook.php on line 288
+[25-Feb-2020 13:51:32 UTC] PHP Stack trace:
+[25-Feb-2020 13:51:32 UTC] PHP   1. {main}() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-admin/admin-ajax.php:0
+[25-Feb-2020 13:51:32 UTC] PHP   2. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-admin/admin-ajax.php:22
+[25-Feb-2020 13:51:32 UTC] PHP   3. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-load.php:37
+[25-Feb-2020 13:51:32 UTC] PHP   4. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-config.php:90
+[25-Feb-2020 13:51:32 UTC] PHP   5. do_action() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-settings.php:507
+[25-Feb-2020 13:51:32 UTC] PHP   6. WP_Hook->do_action() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/plugin.php:478
+[25-Feb-2020 13:51:32 UTC] PHP   7. WP_Hook->apply_filters() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/class-wp-hook.php:312
+[25-Feb-2020 13:52:33 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'twentyseventeen_default_header' not found or invalid function name in /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/class-wp-hook.php on line 288
+[25-Feb-2020 13:52:33 UTC] PHP Stack trace:
+[25-Feb-2020 13:52:33 UTC] PHP   1. {main}() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-admin/admin-ajax.php:0
+[25-Feb-2020 13:52:33 UTC] PHP   2. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-admin/admin-ajax.php:22
+[25-Feb-2020 13:52:33 UTC] PHP   3. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-load.php:37
+[25-Feb-2020 13:52:33 UTC] PHP   4. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-config.php:90
+[25-Feb-2020 13:52:33 UTC] PHP   5. do_action() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-settings.php:507
+[25-Feb-2020 13:52:33 UTC] PHP   6. WP_Hook->do_action() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/plugin.php:478
+[25-Feb-2020 13:52:33 UTC] PHP   7. WP_Hook->apply_filters() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/class-wp-hook.php:312
+[25-Feb-2020 13:54:33 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'twentyseventeen_default_header' not found or invalid function name in /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/class-wp-hook.php on line 288
+[25-Feb-2020 13:54:33 UTC] PHP Stack trace:
+[25-Feb-2020 13:54:33 UTC] PHP   1. {main}() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-admin/admin-ajax.php:0
+[25-Feb-2020 13:54:33 UTC] PHP   2. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-admin/admin-ajax.php:22
+[25-Feb-2020 13:54:33 UTC] PHP   3. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-load.php:37
+[25-Feb-2020 13:54:33 UTC] PHP   4. require_once() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-config.php:90
+[25-Feb-2020 13:54:33 UTC] PHP   5. do_action() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-settings.php:507
+[25-Feb-2020 13:54:33 UTC] PHP   6. WP_Hook->do_action() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/plugin.php:478
+[25-Feb-2020 13:54:33 UTC] PHP   7. WP_Hook->apply_filters() /Users/Gunnahr/Desktop/LocalSites/realestate/app/public/wp-includes/class-wp-hook.php:312
