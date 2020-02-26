@@ -61,11 +61,11 @@ Version: 1.0.0
   font-size: 24px;
 }
 
-.entry-header {
+.sales_item-template-default .entry-header {
   margin-bottom: 0;
 }
 
-.entry-title {
+.sales_item-template-default .entry-title {
   margin-bottom: 0;
 }
 
