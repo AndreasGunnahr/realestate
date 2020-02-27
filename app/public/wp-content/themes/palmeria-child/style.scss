@@ -6,10 +6,115 @@ Template: palmeria
 Version: 1.0.0
 */
 
+
+.site-content {
+    margin-top: 0;
+    // padding-top: 0;
+
+    // .type-post {
+    //     margin-top: 100px;
+
+
+    // }
+    #primary {
+        #main {
+            // display: grid;
+            // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    // article {
+    //     // width: 300px;
+    //     background: lightgrey;
+    //     flex-basis: 30%;
+    //     margin: 10px !important;
+    //     padding: 0 !important;
+    //     height: 300px;
+
+    //     // .entry-title {
+    //     //     width: 100%;
+    //     // }
+    //     img {
+    //         width: 100%;
+    //     }
+    // }
+
+    .post-grid {
+        .grid-nav-top {
+            // display: none;
+        }
+
+        .grid-items {
+            .item {
+                .layer-wrapper {
+                    padding: 10px;
+                    background: #505050;
+
+                    .layer-content {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.searchandfilter {
+    height: 90px;
+    background: #505050;
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            li {
+                margin: 0 10px 0 0;
+                padding: 0;
+
+                input,
+                select {
+                    height: 50px;
+                }
+
+                input {
+                    display: flex;
+                    align-items: center;
+
+                    &:nth-child(2) {
+                        background: blue;
+
+                        &:hover {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .tag {
     text-align: center;
     margin-bottom: 40px;
-    a{
+
+    a {
         text-decoration: none;
         background-color: #eb7d3d;
         color: white;
@@ -23,30 +128,36 @@ Version: 1.0.0
     justify-content: center;
     height: auto;
     min-width: auto;
-    margin-top: 70px!important;
-    margin-bottom: 70px!important;
-    li{
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+
+    li {
         float: left;
         border-right: 1px solid rgb(175, 172, 172);
         padding: 0 10%;
     }
+
     li:last-child {
         border: none;
-      }
+    }
+
     dl {
         margin: 0;
         text-align: center;
     }
-    dt{
+
+    dt {
         font-size: 36px;
         font-weight: lighter;
         color: gray;
     }
+
     dd {
         margin: 0;
         color: rgb(155, 155, 155);
     }
-    .sqm{
+
+    .sqm {
         font-size: 24px;
     }
 }
@@ -55,6 +166,7 @@ Version: 1.0.0
     .entry-header {
         margin-bottom: 0;
     }
+
     .entry-title {
         margin-bottom: 0;
     }
