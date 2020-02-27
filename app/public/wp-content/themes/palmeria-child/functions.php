@@ -30,7 +30,7 @@ function prefix_add_content ($content){
         $before = '<h3 class="address">' . $address . '</h3>';
         $before .= '<ul class="estateInfo"><li><dl><dt>' . $number_of_rooms .'</dt><dd>rooms</dd></dl></li>';
         $before .= '<li><dl><dt>' . $square_meters . '<span class="sqm">sqm</span></dt><dd>interior</dd></dl></li>';
-        $before .= '<li><dl><dt>' . $initial_bid . '</dt><dd>kronor</dd></dl></li></ul>';
+        $before .= '<li><dl><dt>' . $initial_bid . '</dt><dd>initial bid</dd></dl></li></ul>';
         $after = "";
         $content = $before . $content . $after;
     }
