@@ -11,11 +11,23 @@
  */
 get_header();
 ?>
-
+    <?php
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        $query = new WP_Query(array(
+            'post_type' => 'sales_item',
+            // 'paged' => $paged,
+            'post_status' => 'publish',
+            'posts_per_page' => -5,
+        ));
+    ?>
+    <!-- <div class = "search-bar"> -->
+    <?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?>
+	<!-- </div> -->
 	<div id="primary" class="content-area <?php echo esc_attr(get_theme_mod('palmeria_blog_layout', PALMERIA_BLOG_LAYOUT_2)); ?>">
 		<main id="main" class="site-main">
 
 		<?php
+
         if (have_posts()) :
 
             if (is_home() && !is_front_page()) :
@@ -25,21 +37,26 @@ get_header();
 				</header>
 				<?php
             endif;
-
+            echo do_shortcode("[post_grid id='367']");
             /* Start the Loop */
-            while (have_posts()) :
-                the_post();
+            // have_posts()
+            // the_post()
+            // while ($query->have_posts()) :
+            //         $query->the_post();
+            //         // $post_id = get_the_ID();
+            //         // echo $post_id;
+            //         // echo "<br>";
 
-                /*
-                 * Include the Post-Type-specific template for the content.
-                 * If you want to override this in a child theme, then include a file
-                 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-                 */
-                get_template_part('template-parts/content-loop', get_post_type());
+            //     /*
+            //      * Include the Post-Type-specific template for the content.
+            //      * If you want to override this in a child theme, then include a file
+            //      * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+            //      */
+            //     get_template_part('template-parts/content-loop', get_post_type());
 
-            endwhile;
+            // endwhile;
 
-            palmeria_posts_pagination();
+            // palmeria_posts_pagination();
 
         else :
 
