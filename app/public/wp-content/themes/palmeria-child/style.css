@@ -165,4 +165,47 @@ Version: 1.0.0
 .home .searchandfilter div ul li input:nth-child(2):hover {
   border: none;
 }
+
+.wpcf7 {
+  border: 2px solid grey;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 15px 25px black;
+          box-shadow: 0 15px 25px black;
+  border-radius: 10px;
+}
+
+.wpcf7 .wpcf7-form p label {
+  padding: 10px 0;
+  font-size: 16px;
+  color: grey;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wpcf7 .wpcf7-form p label span input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #5e5c5c;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  background: transparent;
+}
+
+.wpcf7 .wpcf7-form p label span input:focus ~ label,
+.wpcf7 .wpcf7-form p label span input:valid ~ label {
+  top: -18px;
+  left: 0;
+  color: #3f5fa5;
+  font-size: 12px;
+}
+
+.wpcf7 .wpcf7-form p label span input:focus ~ label textarea,
+.wpcf7 .wpcf7-form p label span input:valid ~ label textarea {
+  height: 5rem;
+}
 /*# sourceMappingURL=style.css.map */
