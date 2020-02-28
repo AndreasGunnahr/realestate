@@ -179,7 +179,7 @@ Version: 1.0.0
 .wpcf7 .wpcf7-form p label {
   padding: 10px 0;
   font-size: 16px;
-  color: grey;
+  color: #5a5959;
   -webkit-transition: .5s;
   transition: .5s;
 }
