@@ -54,6 +54,16 @@
                 );
 
                 ?>
+                    <div id="footer-sidebar" class="secondary">
+                        <div id="footer">
+                            <?php
+                                if(is_active_sidebar('footer')){
+                                dynamic_sidebar('footer');
+                                }
+                            ?>
+                        </div>
+                    </div>
+                </div>
             </div><!-- .site-info -->
         </div>
 	</footer><!-- #colophon -->
