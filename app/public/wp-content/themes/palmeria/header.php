@@ -55,6 +55,7 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+		
         <?php
         endif;
         if(is_active_sidebar('sidebar-1') || has_nav_menu('menu-1')):
@@ -70,7 +71,9 @@
         </button>
         <?php
         endif;
-        ?>
+		?>
+		
+		
 	</header><!-- #masthead -->
 
     <?php

@@ -21,9 +21,15 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php
+ 		if ( is_active_sidebar( 'header' ) ) : ?>
+	 		<div id="header-widget-area" class="chw-widget-area widget-area" role="complementary">
+	 			<?php dynamic_sidebar( 'header' ); ?>
+	 		</div>
+ 	<?php endif; ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'palmeria' ); ?></a>
-
+	
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
@@ -70,7 +76,7 @@
         </button>
         <?php
         endif;
-        ?>
+		?>
 	</header><!-- #masthead -->
 
     <?php
