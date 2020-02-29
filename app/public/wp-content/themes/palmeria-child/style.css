@@ -167,12 +167,11 @@ Version: 1.0.0
 }
 
 .wpcf7 {
-  border: 2px solid grey;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 0 15px 25px black;
-          box-shadow: 0 15px 25px black;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
 
@@ -182,6 +181,10 @@ Version: 1.0.0
   color: #5a5959;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.wpcf7 .wpcf7-form p label span textarea {
+  height: 5rem;
 }
 
 .wpcf7 .wpcf7-form p label span input {
@@ -202,10 +205,5 @@ Version: 1.0.0
   left: 0;
   color: #3f5fa5;
   font-size: 12px;
-}
-
-.wpcf7 .wpcf7-form p label span input:focus ~ label textarea,
-.wpcf7 .wpcf7-form p label span input:valid ~ label textarea {
-  height: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
