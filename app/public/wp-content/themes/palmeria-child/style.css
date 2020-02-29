@@ -173,6 +173,7 @@ Version: 1.0.0
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+  padding: 1rem;
 }
 
 .wpcf7 .wpcf7-form p label {
