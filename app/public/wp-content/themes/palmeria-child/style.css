@@ -61,6 +61,16 @@ Version: 1.0.0
   font-size: 24px;
 }
 
+.sales_item-template-default .site-content {
+  margin-top: -40px;
+  border-top: 1px solid #8d8d8d;
+}
+
+.sales_item-template-default .custom-header:after {
+  background: none;
+  opacity: 1;
+}
+
 .sales_item-template-default .entry-header {
   margin-bottom: 0;
 }
