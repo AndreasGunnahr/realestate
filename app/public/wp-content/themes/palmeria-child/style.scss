@@ -89,60 +89,16 @@ Version: 1.0.0
 .home {
     .site-content {
         margin-top: 0;
-        // padding-top: 0;
 
-        // .type-post {
-        //     margin-top: 100px;
-
-
-        // }
         #primary {
             #main {
-                // display: grid;
-                // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                 display: flex;
-                flex-wrap: wrap;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
+
             }
         }
-
-        // article {
-        //     // width: 300px;
-        //     background: lightgrey;
-        //     flex-basis: 30%;
-        //     margin: 10px !important;
-        //     padding: 0 !important;
-        //     height: 300px;
-
-        //     // .entry-title {
-        //     //     width: 100%;
-        //     // }
-        //     img {
-        //         width: 100%;
-        //     }
-        // }
-
-        .post-grid {
-            .grid-nav-top {
-                // display: none;
-            }
-
-            .grid-items {
-                .item {
-                    .layer-wrapper {
-                        padding: 10px;
-                        background: #505050;
-
-                        .layer-content {
-                            color: white;
-                        }
-                    }
-                }
-            }
-        }
-
-
     }
 
     .searchandfilter {
@@ -241,5 +197,100 @@ Version: 1.0.0
             }
 
         }
+    }
+}
+
+
+
+
+.selected-item-h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    float: left;
+    margin: 0;
+    display: flex;
+    width: 90%;
+    margin: 2rem 0;
+    border-bottom: 2px solid black;
+
+}
+
+/* Grid style */
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0 3rem;
+
+    .card {
+        height: 350px;
+        width: 100%;
+
+        .info-container {
+            display: grid;
+            grid-template-columns: repeat(1fr, 2);
+
+            h2.card-title {
+                font-family: "Open Sans", sans-serif;
+                font-size: 20px;
+                margin: 10px 0 5px 0;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 900;
+                }
+            }
+
+            p.card-info {
+                font-size: 14px;
+                margin: 0 0 5px 0;
+                font-weight: 900;
+                color: black;
+            }
+
+            .post-categories {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    padding: 0;
+
+                    &:first-letter {
+                        text-transform: uppercase;
+                    }
+
+                    a {
+                        font-size: 14px;
+                        color: black;
+                        font-weight: 900;
+                        text-decoration: none;
+
+
+                    }
+                }
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-height: 200px;
+        }
+    }
+}
+
+.pagination {
+    margin-top: 50px;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

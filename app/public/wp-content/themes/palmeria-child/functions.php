@@ -16,6 +16,16 @@ function my_theme_enqueue_styles()
 
 add_filter('the_content', 'prefix_add_content');
 
+function get_tag_ID($tag_name)
+{
+    $tag = get_term_by('name', $tag_name, 'post_tag');
+    if ($tag) {
+        return $tag->term_id;
+    } else {
+        return 0;
+    }
+}
+
 // adds custom content to sales_item
 function prefix_add_content($content)
 {
