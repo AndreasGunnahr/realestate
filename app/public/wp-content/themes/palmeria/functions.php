@@ -189,6 +189,24 @@ function palmeria_widgets_init() {
 		'before_title'  => '<h2 class="widget-title hidden">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+        'name' => 'Footer',
+        'id' => 'footer',
+        'description' => 'Appears in the footer area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+		) );
+	register_sidebar( array(
+		'name' => 'Header',
+		'id' => 'header',
+		'description' => 'Appears in the header area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		) );
 }
 add_action( 'widgets_init', 'palmeria_widgets_init' );
 

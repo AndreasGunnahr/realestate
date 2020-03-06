@@ -54,6 +54,8 @@
                 );
 
                 ?>
+                    
+                </div>
             </div><!-- .site-info -->
         </div>
 	</footer><!-- #colophon -->
