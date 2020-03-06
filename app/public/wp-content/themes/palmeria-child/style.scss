@@ -30,15 +30,18 @@ Version: 1.0.0
     // article {
     //     // width: 300px;
     //     background: lightgrey;
-    //     flex-basis: 30%;
     //     margin: 10px !important;
     //     padding: 0 !important;
     //     height: 300px;
+    //     flex-basis: 30%;
 
     //     // .entry-title {
-    //     //     width: 100%;
-    //     // }
+    // //     width: 100%;
+    // //     w
+    // // }
+
     //     img {
+    //         height: 200px;
     //         width: 100%;
     //     }
     // }
@@ -53,9 +56,11 @@ Version: 1.0.0
                 .layer-wrapper {
                     padding: 10px;
                     background: #505050;
+                    border-radius: 5px;
 
                     .layer-content {
                         color: white;
+
                     }
                 }
             }
@@ -73,6 +78,8 @@ Version: 1.0.0
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
     div {
         display: flex;
