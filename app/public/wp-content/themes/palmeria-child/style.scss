@@ -100,51 +100,6 @@ Version: 1.0.0
             }
         }
     }
-
-    .searchandfilter {
-        height: 90px;
-        background: #505050;
-        width: 100%;
-        margin-top: -100px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            ul {
-                height: 100%;
-                display: flex;
-                align-items: center;
-
-                li {
-                    margin: 0 10px 0 0;
-                    padding: 0;
-
-                    input,
-                    select {
-                        height: 50px;
-                    }
-
-                    input {
-                        display: flex;
-                        align-items: center;
-
-                        &:nth-child(2) {
-                            background: blue;
-
-                            &:hover {
-                                border: none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 .wpcf7 {
@@ -306,6 +261,58 @@ Version: 1.0.0
             display: block;
             width: 100%;
             max-height: 200px;
+        }
+    }
+}
+
+.header-container {
+    h1 {
+        margin-top: 40px;
+        margin-bottom: -20px;
+    }
+}
+
+.searchandfilter {
+    height: 90px;
+    background: #505050;
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            li {
+                margin: 0 10px 0 0;
+                padding: 0;
+
+                input,
+                select {
+                    height: 50px;
+                }
+
+                input {
+                    display: flex;
+                    align-items: center;
+
+                    &:nth-child(2) {
+                        background: blue;
+
+                        &:hover {
+                            border: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }

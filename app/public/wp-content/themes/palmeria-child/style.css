@@ -106,69 +106,6 @@ Version: 1.0.0
           justify-content: center;
 }
 
-.home .searchandfilter {
-  height: 90px;
-  background: #505050;
-  width: 100%;
-  margin-top: -100px;
-  margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.home .searchandfilter div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.home .searchandfilter div ul {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.home .searchandfilter div ul li {
-  margin: 0 10px 0 0;
-  padding: 0;
-}
-
-.home .searchandfilter div ul li input,
-.home .searchandfilter div ul li select {
-  height: 50px;
-}
-
-.home .searchandfilter div ul li input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.home .searchandfilter div ul li input:nth-child(2) {
-  background: blue;
-}
-
-.home .searchandfilter div ul li input:nth-child(2):hover {
-  border: none;
-}
-
 .wpcf7 {
   text-align: center;
   -webkit-box-sizing: border-box;
@@ -322,6 +259,74 @@ Version: 1.0.0
   display: block;
   width: 100%;
   max-height: 200px;
+}
+
+.header-container h1 {
+  margin-top: 40px;
+  margin-bottom: -20px;
+}
+
+.searchandfilter {
+  height: 90px;
+  background: #505050;
+  width: 100%;
+  margin-top: -100px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchandfilter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchandfilter div ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchandfilter div ul li {
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
+.searchandfilter div ul li input,
+.searchandfilter div ul li select {
+  height: 50px;
+}
+
+.searchandfilter div ul li input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchandfilter div ul li input:nth-child(2) {
+  background: blue;
+}
+
+.searchandfilter div ul li input:nth-child(2):hover {
+  border: none;
 }
 
 .pagination {

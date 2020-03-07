@@ -6,7 +6,7 @@
  */
 get_header();
 ?>
-
+    <?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?>
 	<div id="primary" class="content-area <?php echo esc_attr(get_theme_mod('palmeria_blog_layout', PALMERIA_BLOG_LAYOUT_2)); ?>">
 		<main id="main" class="site-main">
         <?php
