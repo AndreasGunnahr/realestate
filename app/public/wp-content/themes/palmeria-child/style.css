@@ -212,7 +212,6 @@ Version: 1.0.0
 }
 
 .selected-item-h1 {
-  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   float: left;
   margin: 0;
@@ -240,12 +239,15 @@ Version: 1.0.0
 .grid-container .card .info-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (2)[1fr];
-      grid-template-columns: repeat(1fr, 2);
+  -ms-grid-columns: 150px 1fr;
+      grid-template-columns: 150px 1fr;
+  padding: 10px;
 }
 
 .grid-container .card .info-container h2.card-title {
-  font-family: "Open Sans", sans-serif;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
   font-size: 20px;
   margin: 10px 0 5px 0;
 }
@@ -257,19 +259,52 @@ Version: 1.0.0
 }
 
 .grid-container .card .info-container p.card-info {
+  -ms-grid-column: 1;
+  grid-column: 1;
   font-size: 14px;
   margin: 0 0 5px 0;
+  color: gray;
+}
+
+.grid-container .card .info-container .tag-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.grid-container .card .info-container .tag-wrapper a {
+  font-size: 12px;
   font-weight: 900;
-  color: black;
+  text-decoration: none;
+  color: #eb7d3d;
+}
+
+.grid-container .card .info-container .tag-wrapper a:nth-child(2) {
+  margin-left: 2.5px;
 }
 
 .grid-container .card .info-container .post-categories {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
   list-style: none;
   padding: 0;
 }
 
 .grid-container .card .info-container .post-categories li {
   padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .grid-container .card .info-container .post-categories li:first-letter {
@@ -278,7 +313,7 @@ Version: 1.0.0
 
 .grid-container .card .info-container .post-categories li a {
   font-size: 14px;
-  color: black;
+  color: #eb7d3d;
   font-weight: 900;
   text-decoration: none;
 }
@@ -291,6 +326,19 @@ Version: 1.0.0
 
 .pagination {
   margin-top: 50px;
+}
+
+.pagination a {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.pagination span {
+  color: #eb7d3d;
+  border: 1px solid #eb7d3d;
+  padding: 5px;
 }
 
 @media (min-width: 600px) {

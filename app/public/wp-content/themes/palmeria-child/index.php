@@ -23,12 +23,14 @@ get_header();
             ),
             'posts_per_page' => 3,
         ));
+
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $query = new WP_Query(array(
             'post_type' => 'sales_item',
             'paged' => $paged,
             'post_status' => 'publish',
             'posts_per_page' => 5,
+            'ignore_sticky_posts' => true,
         ));
     ?>
     <!-- <div class = "search-bar"> -->
@@ -59,6 +61,7 @@ get_header();
                             <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'initial_bid', true); ?> </p>
                             <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'square_meters', true); ?> sqm</p>
                             <?php echo the_category(); ?>
+                            <?php the_tags("<div class = 'tag-wrapper'>", ',', '</div>'); ?>
                             <p class = "card-info"><?php echo get_the_date(); ?><p>
                         </div>
                     </div>
@@ -74,6 +77,7 @@ get_header();
                             <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'initial_bid', true); ?> </p>
                             <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'square_meters', true); ?> sqm</p>
                             <?php echo the_category(); ?>
+                            <?php the_tags("<div class = 'tag-wrapper'>", ',', '</div>'); ?>
                             <p class = "card-info"><?php echo get_the_date(); ?><p>
                         </div>
                     </div>
@@ -81,20 +85,21 @@ get_header();
             </div>
             <div class = "pagination">
                 <?php
+
                     echo paginate_links(array(
                         'base' => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
-                        'total' => $query->max_num_pages,
-                        'current' => max(1, get_query_var('paged')),
+                        'total' => $query->max_num_pages - 2,
+                        'current' => $paged,
                         'format' => '?paged=%#%',
                         'show_all' => false,
                         'type' => 'plain',
                         'end_size' => 2,
                         'mid_size' => 1,
-                        'prev_next' => true,
-                        'prev_text' => sprintf('<i></i> %1$s', __('Newer Posts', 'text-domain')),
-                        'next_text' => sprintf('%1$s <i></i>', __('Older Posts', 'text-domain')),
-                        'add_args' => false,
-                        'add_fragment' => '',
+                        // 'prev_next' => true,
+                        // 'prev_text' => sprintf('<i></i> %1$s', __('Newer Posts', 'text-domain')),
+                        // 'next_text' => sprintf('%1$s <i></i>', __('Older Posts', 'text-domain')),
+                        // 'add_args' => false,
+                        // 'add_fragment' => '',
                     ));
                 ?> 
             </div>

@@ -204,7 +204,7 @@ Version: 1.0.0
 
 
 .selected-item-h1 {
-    font-family: "Open Sans", sans-serif;
+    // font-family: "Open Sans", sans-serif;
     font-size: 2rem;
     float: left;
     margin: 0;
@@ -227,10 +227,12 @@ Version: 1.0.0
 
         .info-container {
             display: grid;
-            grid-template-columns: repeat(1fr, 2);
+            grid-template-columns: 150px 1fr;
+            padding: 10px;
 
             h2.card-title {
-                font-family: "Open Sans", sans-serif;
+                grid-column: 1/3;
+                // font-family: "Open Sans", sans-serif;
                 font-size: 20px;
                 margin: 10px 0 5px 0;
 
@@ -242,26 +244,55 @@ Version: 1.0.0
             }
 
             p.card-info {
+                grid-column: 1;
                 font-size: 14px;
                 margin: 0 0 5px 0;
-                font-weight: 900;
-                color: black;
+                // font-weight: 900;
+                color: gray;
+            }
+
+            .tag-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                // flex-direction: column;
+
+                a {
+                    font-size: 12px;
+                    // color: white;
+                    font-weight: 900;
+                    text-decoration: none;
+                    color: #eb7d3d;
+                    // padding: 5px;
+
+                    &:nth-child(2) {
+                        margin-left: 2.5px;
+                    }
+                }
             }
 
             .post-categories {
+                grid-column: 2;
+                grid-row: 2;
                 list-style: none;
                 padding: 0;
 
+
                 li {
                     padding: 0;
+                    margin: 0;
+                    text-align: center;
 
                     &:first-letter {
                         text-transform: uppercase;
                     }
 
                     a {
+
                         font-size: 14px;
-                        color: black;
+                        color: #eb7d3d;
                         font-weight: 900;
                         text-decoration: none;
 
@@ -281,6 +312,20 @@ Version: 1.0.0
 
 .pagination {
     margin-top: 50px;
+
+    a {
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 5px;
+
+    }
+
+    span {
+        color: #eb7d3d;
+        border: 1px solid #eb7d3d;
+        padding: 5px;
+    }
 }
 
 @media (min-width: 600px) {

@@ -11,24 +11,31 @@ get_header();
 		<main id="main" class="site-main">
         <?php
             $page_object = get_queried_object();
-            $tag_id = get_tag_ID($_GET['tag']);
+            if ($page_object->taxonomy == 'category') {
+                $categoryID = $page_object->cat_ID;
+                $tag_id = get_tag_ID($_GET['tag']);
+            } else {
+                $tag_id = $page_object->term_id;
+            }
         ?>
 		<?php $query = new WP_Query(
             array(
                 'post_type' => 'sales_item',
-                // 'paged' => $paged,
-                'category__and' => $page_object->cat_ID,
+                'category__and' => $categoryID,
                 'tag__in' => $tag_id,
                 'post_status' => 'publish',
-                'posts_per_page' => -5,
+                'posts_per_page' => -1,
                 ));
         ?>
 		<?php if ($query->have_posts()) : ?>
 
 			<header class="page-header">
+                <div class = "header-container">
+                    <h1><?php echo $query->found_posts; ?> Posts found</h1>
+                </div>
 				<?php
-                the_archive_title('<h1 class="page-title">', '</h1>');
-                the_archive_description('<div class="archive-description">', '</div>');
+                // the_archive_title('<h1 class="page-title">', '</h1>');
+                // the_archive_description('<div class="archive-description">', '</div>');
                 ?>
 			</header><!-- .page-header -->
 
@@ -41,12 +48,13 @@ get_header();
                             <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'initial_bid', true); ?> </p>
                             <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'square_meters', true); ?> sqm</p>
                             <?php echo the_category(); ?>
+                            <?php the_tags("<div class = 'tag-wrapper'>", ',', '</div>'); ?>
                             <p class = "card-info"><?php echo get_the_date(); ?><p>
                         </div>
                     </div>
                 <?php endwhile; ?>
-            </div>	<!-- 
-            // /* Start the Loop */
+            </div>
+            <!-- // /* Start the Loop */
             // while ($query->have_posts()) :
             //     $query->the_post();
                 // echo the_post();
@@ -56,19 +64,19 @@ get_header();
                 //  * If you want to override this in a child theme, then include a file
                 //  * called content-___.php (where ___ is the Post Type name) and that will be used instead.
                 //  */
-                // get_template_part('template-parts/content-loop', get_post_type());
+                // get_template_part('template-parts/content-loop', get_post_type()); -->
 
-        <<?php
+        <?php
 
         else :
 
             get_template_part('template-parts/content', 'none');
 
         endif;
-        ?> -->
+        ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php
 get_sidebar();
