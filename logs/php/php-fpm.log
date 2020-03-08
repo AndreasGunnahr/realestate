@@ -42,6 +42,10 @@
 [27-Feb-2020 14:49:43] NOTICE: exiting, bye-bye!
 [27-Feb-2020 14:49:48] NOTICE: fpm is running, pid 65560
 [27-Feb-2020 14:49:48] NOTICE: ready to handle connections
+<<<<<<< HEAD
+[05-Mar-2020 11:22:46] NOTICE: fpm is running, pid 23847
+[05-Mar-2020 11:22:46] NOTICE: ready to handle connections
+=======
 [27-Feb-2020 15:48:05] NOTICE: Terminating ...
 [27-Feb-2020 15:48:05] NOTICE: Terminating ...
 [27-Feb-2020 15:48:05] NOTICE: exiting, bye-bye!
@@ -67,6 +71,10 @@
 [07-Mar-2020 13:26:13] NOTICE: exiting, bye-bye!
 [07-Mar-2020 13:26:17] NOTICE: fpm is running, pid 20309
 [07-Mar-2020 13:26:17] NOTICE: ready to handle connections
+<<<<<<< HEAD
 [08-Mar-2020 01:17:00] NOTICE: Terminating ...
 [08-Mar-2020 01:17:00] NOTICE: Terminating ...
 [08-Mar-2020 01:17:00] NOTICE: exiting, bye-bye!
+=======
+>>>>>>> 8782e8bcafa647996da0d0012188001584aeefa8
+>>>>>>> c69159240ec4aaa70134fe484531abccf2069c50
