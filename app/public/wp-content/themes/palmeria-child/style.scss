@@ -326,6 +326,12 @@ Version: 1.0.0
         border: 1px solid black;
         padding: 5px;
 
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
     }
 
     span {
