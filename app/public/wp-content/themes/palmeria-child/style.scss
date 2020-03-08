@@ -6,6 +6,19 @@ Template: palmeria
 Version: 1.0.0
 */
 
+// sidebar
+.cat-item, .tagcloud, .widget_meta {
+    a {
+        color: #eb7d3d;
+        text-decoration: none;
+    }
+}
+
+.absolute-sidebar {
+    // background-color: #505050;
+}
+
+// CPT
 .sales_item-template-default {
     .tag {
         text-align: center;
@@ -44,9 +57,13 @@ Version: 1.0.0
         }
 
         dt {
-            font-size: 36px;
+            font-size: 30px;
             font-weight: lighter;
             color: gray;
+        }
+
+        .date{
+            white-space: nowrap;
         }
 
         dd {
