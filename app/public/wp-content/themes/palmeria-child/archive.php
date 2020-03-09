@@ -18,25 +18,24 @@ get_header();
                 $tag_id = $page_object->term_id;
             }
         ?>
-		<?php $query = new WP_Query(
+        <?php
+            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+            $query = new WP_Query(
             array(
                 'post_type' => 'sales_item',
+                'paged' => $paged,
                 'category__and' => $categoryID,
                 'tag__in' => $tag_id,
                 'post_status' => 'publish',
-                'posts_per_page' => -1,
+                'posts_per_page' => 5,
                 ));
         ?>
 		<?php if ($query->have_posts()) : ?>
 
 			<header class="page-header">
                 <div class = "header-container">
-                    <h1><?php echo $query->found_posts; ?> Posts found</h1>
+                    <h1><?php echo $query->found_posts; ?> objects found</h1>
                 </div>
-				<?php
-                // the_archive_title('<h1 class="page-title">', '</h1>');
-                // the_archive_description('<div class="archive-description">', '</div>');
-                ?>
 			</header><!-- .page-header -->
 
             <div class = "grid-container">
@@ -47,32 +46,39 @@ get_header();
                             <h2 class = "card-title"><a href="<?php the_permalink(); ?>" title="Read"><?php the_title(); ?></a></h2>
                             <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'initial_bid', true); ?> </p>
                             <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'square_meters', true); ?> sqm</p>
+                            <p class = "card-info rooms"><?php echo get_post_meta(get_the_ID(), 'number_of_rooms', true); ?> rooms</p>
                             <?php echo the_category(); ?>
                             <?php the_tags("<div class = 'tag-wrapper'>", ',', '</div>'); ?>
-                            <p class = "card-info"><?php echo get_the_date(); ?><p>
+                            <p class = "card-info date"><?php echo get_the_date(); ?><p>
                         </div>
                     </div>
                 <?php endwhile; ?>
             </div>
-            <!-- // /* Start the Loop */
-            // while ($query->have_posts()) :
-            //     $query->the_post();
-                // echo the_post();
-                // echo $query->get_post_type();
-                // $query->get_post_type();
-                //  * Include the Post-Type-specific template for the content.
-                //  * If you want to override this in a child theme, then include a file
-                //  * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-                //  */
-                // get_template_part('template-parts/content-loop', get_post_type()); -->
+            <div class = "pagination">
+                <?php
 
+                    echo paginate_links(array(
+                        'base' => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
+                        'total' => $query->max_num_pages,
+                        'current' => $paged,
+                        'format' => '?page=%#%',
+                        'show_all' => true,
+                        'type' => 'plain',
+                        'end_size' => 2,
+                        'mid_size' => 1,
+                    ));
+                ?> 
+            </div>
         <?php
 
         else :
+            ?>
+            <header class="page-header archive-header">
+                <h1 class="page-title"><?php esc_html_e('Nothing Found', 'palmeria'); ?></h1>
+            </header><!-- .page-header -->
+            <p class = "error-text"><?php esc_html_e('It seems we can&rsquo;t find what you&rsquo;re looking for. Please try agian.', 'palmeria'); ?></p>
 
-            get_template_part('template-parts/content', 'none');
-
-        endif;
+        <?php endif;
         ?>
 
 		</main>

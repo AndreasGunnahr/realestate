@@ -7,7 +7,9 @@ Version: 1.0.0
 */
 
 // sidebar
-.cat-item, .tagcloud, .widget_meta {
+.cat-item,
+.tagcloud,
+.widget_meta {
     a {
         color: #eb7d3d;
         text-decoration: none;
@@ -62,7 +64,7 @@ Version: 1.0.0
             color: gray;
         }
 
-        .date{
+        .date {
             white-space: nowrap;
         }
 
@@ -190,7 +192,7 @@ Version: 1.0.0
 /* Grid style */
 .grid-container {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 30px;
     padding: 0 3rem;
 
     .card {
@@ -227,22 +229,27 @@ Version: 1.0.0
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-items: center;
+                // align-items: center;
                 font-size: 12px;
-                // flex-direction: column;
+                grid-row: 3/5;
+                grid-column: 2;
 
                 a {
                     font-size: 12px;
-                    // color: white;
                     font-weight: 900;
                     text-decoration: none;
                     color: #eb7d3d;
-                    // padding: 5px;
 
                     &:nth-child(2) {
                         margin-left: 2.5px;
                     }
                 }
+            }
+
+            p.card-info.date {
+                grid-row: 5;
+                grid-column: 1;
+                // text-align: center;
             }
 
             .post-categories {
@@ -291,7 +298,7 @@ Version: 1.0.0
 
 .searchandfilter {
     height: 90px;
-    background: #505050;
+    background: #e5e5e5;
     width: 100%;
     margin-top: -100px;
     margin-bottom: 20px;
@@ -312,17 +319,49 @@ Version: 1.0.0
                 margin: 0 10px 0 0;
                 padding: 0;
 
+                &:nth-child(2) {
+                    width: 200px;
+                }
+
+                &:nth-child(1),
+                &:nth-child(3) {
+                    width: 150px;
+                }
+
+
                 input,
                 select {
-                    height: 50px;
+                    height: 40px;
+                    font-size: 14px;
+                    // display: flex;
+                    // align-items: center;
+                    padding: 5px 0 5px 10px;
+                    background-position: right 10px top 17.5px;
                 }
+
+                // select:nth-child(1) {
+                //     width: 200px;
+                // }
+
+                // } {
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: center;
+
+                //     &:nth-child(1) {
+                //         width: 200px;
+                //     }
+                // }
 
                 input {
                     display: flex;
                     align-items: center;
 
                     &:nth-child(2) {
-                        background: blue;
+                        background: #eb7d3d;
+                        padding: 5px 30px;
+                        border: none;
+                        width: 100%;
 
                         &:hover {
                             border: none;
@@ -335,26 +374,42 @@ Version: 1.0.0
 }
 
 .pagination {
-    margin-top: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
 
     a {
         color: black;
         text-decoration: none;
         border: 1px solid black;
-        padding: 5px;
+        padding: 7.5px;
+        margin-right: 5px;
+        background: none;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
 
-        span {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+
 
     }
 
     span {
-        color: #eb7d3d;
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        margin-right: 5px;
+        padding: 7.5px;
+    }
+
+    .current {
+        color: #eb7d3d !important;
         border: 1px solid #eb7d3d;
-        padding: 5px;
+        padding: 7.5px;
+        margin-right: 5px;
+        background: none !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 }
 
@@ -368,4 +423,16 @@ Version: 1.0.0
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+.archive-header {
+    margin: 40px 0 0 0;
+}
+
+.error-text {
+    text-align: center;
+}
+
+.site-content {
+    min-height: 500px;
 }

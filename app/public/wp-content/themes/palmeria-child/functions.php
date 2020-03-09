@@ -28,6 +28,18 @@ function get_tag_ID($tag_name)
     }
 }
 
+add_action('get_category_ID', 'get_category_ID');
+
+function get_category_ID($category_name)
+{
+    $category = get_term_by('name', $category_name, 'category');
+    if ($category) {
+        return $category->term_id;
+    } else {
+        return 0;
+    }
+}
+
 // adds custom content to sales_item
 function prefix_add_content($content)
 {
