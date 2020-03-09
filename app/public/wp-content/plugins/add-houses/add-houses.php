@@ -19,7 +19,8 @@ function add_todo_post () {
       "initial_bid": "£6259467.69",
       "rooms": 13,
       "sqm": 953,
-      "selected": false
+      "selected": false,
+      "city": "Union"
     }, {
       "id": 2,
       "address": "33881 Florence Avenue",
@@ -27,7 +28,8 @@ function add_todo_post () {
       "initial_bid": "£7933426.46",
       "rooms": 20,
       "sqm": 439,
-      "selected": false
+      "selected": false,
+      "city": "Dillon"
     }, {
       "id": 3,
       "address": "62553 Marcy Hill",
@@ -35,7 +37,8 @@ function add_todo_post () {
       "initial_bid": "£7612932.45",
       "rooms": 12,
       "sqm": 424,
-      "selected": true
+      "selected": true,
+      "city": "Killeen"
     }, {
       "id": 4,
       "address": "910 Brown Pass",
@@ -43,7 +46,8 @@ function add_todo_post () {
       "initial_bid": "£3746610.62",
       "rooms": 9,
       "sqm": 812,
-      "selected": false
+      "selected": false,
+      "city": "Independence"
     }, {
       "id": 5,
       "address": "29136 Village Crossing",
@@ -51,7 +55,8 @@ function add_todo_post () {
       "initial_bid": "£2929089.92",
       "rooms": 11,
       "sqm": 865,
-      "selected": true
+      "selected": true,
+      "city": "Georgetown"
     }, {
       "id": 6,
       "address": "13 Michigan Pass",
@@ -59,7 +64,8 @@ function add_todo_post () {
       "initial_bid": "£9850943.54",
       "rooms": 14,
       "sqm": 472,
-      "selected": true
+      "selected": true,
+      "city": "Southlake"
     }, {
       "id": 7,
       "address": "55805 Jenifer Way",
@@ -67,7 +73,8 @@ function add_todo_post () {
       "initial_bid": "£8284918.71",
       "rooms": 6,
       "sqm": 599,
-      "selected": false
+      "selected": false,
+      "city": "Marble Falls"
     }, {
       "id": 8,
       "address": "7 Fallview Drive",
@@ -75,7 +82,8 @@ function add_todo_post () {
       "initial_bid": "£7038810.37",
       "rooms": 2,
       "sqm": 171,
-      "selected": false
+      "selected": false,
+      "city": "Flower Mound"
     }, {
       "id": 9,
       "address": "3257 Roth Trail",
@@ -83,7 +91,8 @@ function add_todo_post () {
       "initial_bid": "£6373047.28",
       "rooms": 12,
       "sqm": 289,
-      "selected": false
+      "selected": false,
+      "city": "Longview"
     }, {
       "id": 10,
       "address": "50864 Grayhawk Street",
@@ -91,7 +100,8 @@ function add_todo_post () {
       "initial_bid": "£3977258.69",
       "rooms": 20,
       "sqm": 706,
-      "selected": true
+      "selected": true,
+      "city": "Cedar Park"
     }, {
       "id": 11,
       "address": "53976 North Court",
@@ -99,7 +109,8 @@ function add_todo_post () {
       "initial_bid": "£4828650.71",
       "rooms": 16,
       "sqm": 655,
-      "selected": true
+      "selected": true,
+      "city": "Allen"
     }, {
       "id": 12,
       "address": "4 Dennis Circle",
@@ -107,7 +118,8 @@ function add_todo_post () {
       "initial_bid": "£4057758.39",
       "rooms": 20,
       "sqm": 325,
-      "selected": false
+      "selected": false,
+      "city": "Mission"
     }, {
       "id": 13,
       "address": "50 Merchant Crossing",
@@ -115,7 +127,8 @@ function add_todo_post () {
       "initial_bid": "£8074106.05",
       "rooms": 17,
       "sqm": 124,
-      "selected": true
+      "selected": true,
+      "city": "Edinburg"
     }, {
       "id": 14,
       "address": "066 Graedel Alley",
@@ -123,7 +136,8 @@ function add_todo_post () {
       "initial_bid": "£7693351.20",
       "rooms": 14,
       "sqm": 790,
-      "selected": false
+      "selected": false,
+      "city": "New Braunfels"
     }, {
       "id": 15,
       "address": "3 Crest Line Hill",
@@ -131,7 +145,8 @@ function add_todo_post () {
       "initial_bid": "£2399946.17",
       "rooms": 8,
       "sqm": 321,
-      "selected": true
+      "selected": true,
+      "city": "Wichita Falls"
     }, {
       "id": 16,
       "address": "055 Mayfield Park",
@@ -139,7 +154,8 @@ function add_todo_post () {
       "initial_bid": "£3810228.39",
       "rooms": 14,
       "sqm": 472,
-      "selected": false
+      "selected": false,
+      "city": "Laredo"
     }, {
       "id": 17,
       "address": "9023 1st Park",
@@ -147,7 +163,8 @@ function add_todo_post () {
       "initial_bid": "£7553049.30",
       "rooms": 6,
       "sqm": 566,
-      "selected": false
+      "selected": false,
+      "city": "Lubbock"
     }, {
       "id": 18,
       "address": "8841 Menomonie Trail",
@@ -155,7 +172,8 @@ function add_todo_post () {
       "initial_bid": "£9433360.35",
       "rooms": 15,
       "sqm": 762,
-      "selected": false
+      "selected": false,
+      "city": "Garland"
     }, {
       "id": 19,
       "address": "2911 Sloan Plaza",
@@ -163,7 +181,8 @@ function add_todo_post () {
       "initial_bid": "£1612939.20",
       "rooms": 13,
       "sqm": 133,
-      "selected": false
+      "selected": false,
+      "city": "Irving"
     }, {
       "id": 20,
       "address": "5 Jay Junction",
@@ -171,7 +190,8 @@ function add_todo_post () {
       "initial_bid": "£2457911.27",
       "rooms": 5,
       "sqm": 849,
-      "selected": false
+      "selected": false,
+      "city": "Arlington"
     }]';
 
     $todo_data = json_decode($file_content, true);
@@ -224,7 +244,8 @@ function add_todo_post () {
     // update_post_meta( $post_id, 'property_view_date', $todo['view_date'], $prev_value = '' );
     // update_post_meta( $post_id, 'number_of_rooms', $todo['rooms'], $prev_value = '' );
     // update_post_meta( $post_id, 'square_meters', $todo['sqm'], $prev_value = '' );
-    update_post_meta( $post_id, 'initial_bid', $bidNewFormat, $prev_value = '' );
+    // update_post_meta( $post_id, 'initial_bid', $bidNewFormat, $prev_value = '' );
+    update_post_meta( $post_id, 'city', $todo['city'], $prev_value = '' );
     // update_post_meta( $post_id, 'selected_item', $todo['selected'], $prev_value = '' );
     // update_post_meta( $post_id, 'city', $city['city'], $prev_value = '' );
 

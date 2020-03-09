@@ -38,12 +38,13 @@ function prefix_add_content($content)
         $address = get_post_meta(get_the_ID(), 'address', true);
         $initial_bid = get_post_meta(get_the_ID(), 'initial_bid', true);
         $view_date = get_post_meta(get_the_ID(), 'property_view_date', true);
+        $city = get_post_meta(get_the_ID(), 'city', true);
 
         $str = $view_date;
         $str = $str[0].$str[1].$str[2].$str[3].'/'.$str[4].$str[5].'/'.$str[6].$str[7];
         $propert_view_date = date('F jS', strtotime($str));
 
-        $before = '<h3 class="address">'.$address.'</h3>';
+        $before = '<h3 class="address">'.$address.', '.$city.'</h3>';
         $before .= '<ul class="estateInfo"><li><dl><dt>'.$number_of_rooms.'</dt><dd>rooms</dd></dl></li>';
         $before .= '<li><dl><dt>'.$square_meters.'<span class="sqm">sqm</span></dt><dd>interior</dd></dl></li>';
         $before .= '<li><dl><dt>'.$initial_bid.'</dt><dd>initial bid</dd></dl></li>';
