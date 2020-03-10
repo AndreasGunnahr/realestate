@@ -236,16 +236,17 @@ function add_todo_post () {
           }
 
     $bid = substr($todo['initial_bid'], 2, -3);
-    $bid = number_format($bid);
-    $pound = substr($todo['initial_bid'], 0, 2);
-    $bidNewFormat = $pound.$bid;
+    $bid = (int) $bid;
+    // $bid = number_format($bid);
+    // $pound = substr($todo['initial_bid'], 0, 2);
+    // $bidNewFormat = $pound.$bid;
 
     // update_post_meta( $post_id, 'address', $todo['address'], $prev_value = '' );
     // update_post_meta( $post_id, 'property_view_date', $todo['view_date'], $prev_value = '' );
     // update_post_meta( $post_id, 'number_of_rooms', $todo['rooms'], $prev_value = '' );
     // update_post_meta( $post_id, 'square_meters', $todo['sqm'], $prev_value = '' );
-    // update_post_meta( $post_id, 'initial_bid', $bidNewFormat, $prev_value = '' );
-    update_post_meta( $post_id, 'city', $todo['city'], $prev_value = '' );
+    update_post_meta( $post_id, 'initial_bid', $bid, $prev_value = '' );
+    // update_post_meta( $post_id, 'city', $todo['city'], $prev_value = '' );
     // update_post_meta( $post_id, 'selected_item', $todo['selected'], $prev_value = '' );
     // update_post_meta( $post_id, 'city', $city['city'], $prev_value = '' );
 
