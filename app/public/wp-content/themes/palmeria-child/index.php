@@ -24,8 +24,7 @@ get_header();
             'posts_per_page' => 3,
         ));
     ?>
-        <?php get_search_form(); ?>
-    <!-- <?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?> -->
+    <?php get_search_form(); ?>
 	<div id="primary" class="content-area <?php echo esc_attr(get_theme_mod('palmeria_blog_layout', PALMERIA_BLOG_LAYOUT_2)); ?>">
 		<main id="main" class="site-main">
 
@@ -64,7 +63,7 @@ get_header();
             <?php
             wp_reset_query();
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-            if(have_posts()) :
+            if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
                     <div class = "card">
                     <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(); ?> </a>
@@ -78,7 +77,7 @@ get_header();
                             <p class = "card-info date"><?php echo get_the_date(); ?><p>
                         </div>
                     </div>
-                <?php endwhile; 
+                <?php endwhile;
                 endif;
                 ?>
             
@@ -88,7 +87,7 @@ get_header();
                     echo paginate_links(array(
                         'base' => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
                         'current' => $paged,
-                        'format' => '?page=%#%'
+                        'format' => '?page=%#%',
                     ));
                 ?> 
             </div>

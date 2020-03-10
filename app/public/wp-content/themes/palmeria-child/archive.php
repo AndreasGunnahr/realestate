@@ -6,7 +6,7 @@
  */
 get_header();
 ?>
-    <?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?>
+    <<?php get_search_form(); ?>
 	<div id="primary" class="content-area <?php echo esc_attr(get_theme_mod('palmeria_blog_layout', PALMERIA_BLOG_LAYOUT_2)); ?>">
 		<main id="main" class="site-main">
         <?php
@@ -61,10 +61,6 @@ get_header();
                         'total' => $query->max_num_pages,
                         'current' => $paged,
                         'format' => '?page=%#%',
-                        'show_all' => true,
-                        'type' => 'plain',
-                        'end_size' => 2,
-                        'mid_size' => 1,
                     ));
                 ?> 
             </div>

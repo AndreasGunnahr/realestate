@@ -79,7 +79,7 @@ Version: 1.0.0
     }
 
     .site-content {
-        margin-top: -40px;
+        // margin-top: 0px;
         border-top: 1px solid rgb(141, 141, 141);
     }
 
@@ -105,9 +105,13 @@ Version: 1.0.0
     }
 }
 
+.site-content {
+    margin-top: -100px;
+}
+
 .home {
     .site-content {
-        margin-top: 0;
+        // margin-top: 0;
 
         #primary {
             #main {
@@ -296,82 +300,82 @@ Version: 1.0.0
     }
 }
 
-.searchandfilter {
-    height: 90px;
-    background: #e5e5e5;
-    width: 100%;
-    margin-top: -100px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
+// .searchandfilter {
+//     height: 90px;
+//     background: #e5e5e5;
+//     width: 100%;
+//     margin-top: -100px;
+//     margin-bottom: 20px;
+//     display: flex;
+//     justify-content: center;
 
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+//     div {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
 
-        ul {
-            height: 100%;
-            display: flex;
-            align-items: center;
+//         ul {
+//             height: 100%;
+//             display: flex;
+//             align-items: center;
 
-            li {
-                margin: 0 10px 0 0;
-                padding: 0;
+//             li {
+//                 margin: 0 10px 0 0;
+//                 padding: 0;
 
-                &:nth-child(2) {
-                    width: 200px;
-                }
+//                 &:nth-child(2) {
+//                     width: 200px;
+//                 }
 
-                &:nth-child(1),
-                &:nth-child(3) {
-                    width: 150px;
-                }
+//                 &:nth-child(1),
+//                 &:nth-child(3) {
+//                     width: 150px;
+//                 }
 
 
-                input,
-                select {
-                    height: 40px;
-                    font-size: 14px;
-                    // display: flex;
-                    // align-items: center;
-                    padding: 5px 0 5px 10px;
-                    background-position: right 10px top 17.5px;
-                }
+//                 input,
+//                 select {
+//                     height: 40px;
+//                     font-size: 14px;
+//                     // display: flex;
+//                     // align-items: center;
+//                     padding: 5px 0 5px 10px;
+//                     background-position: right 10px top 17.5px;
+//                 }
 
-                // select:nth-child(1) {
-                //     width: 200px;
-                // }
+//                 // select:nth-child(1) {
+//                 //     width: 200px;
+//                 // }
 
-                // } {
-                //     display: flex;
-                //     align-items: center;
-                //     justify-content: center;
+//                 // } {
+//                 //     display: flex;
+//                 //     align-items: center;
+//                 //     justify-content: center;
 
-                //     &:nth-child(1) {
-                //         width: 200px;
-                //     }
-                // }
+//                 //     &:nth-child(1) {
+//                 //         width: 200px;
+//                 //     }
+//                 // }
 
-                input {
-                    display: flex;
-                    align-items: center;
+//                 input {
+//                     display: flex;
+//                     align-items: center;
 
-                    &:nth-child(2) {
-                        background: #eb7d3d;
-                        padding: 5px 30px;
-                        border: none;
-                        width: 100%;
+//                     &:nth-child(2) {
+//                         background: #eb7d3d;
+//                         padding: 5px 30px;
+//                         border: none;
+//                         width: 100%;
 
-                        &:hover {
-                            border: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                         &:hover {
+//                             border: none;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 .pagination {
     margin-top: 100px;
@@ -445,7 +449,7 @@ Version: 1.0.0
     padding: 0 20px 20px 20px;
     margin-bottom: 50px;
     background: #e5e5e5;
-    margin-top: -100px;
+    margin-top: -120px;
 
     .row {
         display: flex;
@@ -473,8 +477,6 @@ Version: 1.0.0
                     border: none;
                 }
             }
-
-
 
             select {
                 width: 125px;

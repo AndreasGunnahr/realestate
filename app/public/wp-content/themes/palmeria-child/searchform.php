@@ -28,29 +28,5 @@
 		    <label for="max price">Max price</label>
             <input type="text" name="max_price" id="max_price" placeholder="Max price">
         </div>
-        <!-- <div class = "container">
-            <label for="category">Category</label>
-            <select id = "category" name="category_name">
-            <?php
-            echo '<option value="">Pick a category</option>';
-            $categories = get_categories();
-            foreach ($categories as $category) {
-                echo '<option value="', $category->slug, '">', $category->name, "</option>\n";
-            }
-            ?>
-            </select>
-        </div>
-        <div class = "container">
-            <label for="tags">Tags</label>
-            <select id = "tags">
-            <?php
-            echo '<option value="">Pick a tag</option>';
-            $tags = get_tags();
-            foreach ($tags as $tag) {
-                echo '<option value="', $tag->slug, '">', $tag->name, "</option>\n";
-            }
-            ?>
-            </select>
-        </div> -->
     </div>
 </form>
