@@ -41,7 +41,7 @@ get_header();
             's' => $search_input,
             'post_status' => 'publish',
             'paged' => $paged,
-            'posts_per_page' => 5,
+            'posts_per_page' => -1,
             'meta_query' => array(
                 'relation' => 'AND',
                 array(
@@ -66,13 +66,8 @@ get_header();
 			<header class="page-header">
 				<h1 class="page-title">
 				<div class = "header-container">
-                    <h1><?php echo $query->found_posts; ?> objects found for: <?php echo get_search_query(); ?></h1>
+                    <h1><?php echo $query->found_posts; ?> objects found</h1>
                 </div>
-					<!-- <?php
-                    /* translators: %s: search query. */
-                    printf(esc_html__('Search Results for: %s', 'palmeria'), '<span>'.get_search_query().'</span>');
-                    ?>
-				</h1> -->
 			</header><!-- .page-header -->
 
             <div class = "grid-container">
