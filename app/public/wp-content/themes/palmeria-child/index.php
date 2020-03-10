@@ -24,7 +24,8 @@ get_header();
             'posts_per_page' => 3,
         ));
     ?>
-    <?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?>
+        <?php get_search_form(); ?>
+    <!-- <?php echo do_shortcode('[searchandfilter fields="search,category,post_tag"]'); ?> -->
 	<div id="primary" class="content-area <?php echo esc_attr(get_theme_mod('palmeria_blog_layout', PALMERIA_BLOG_LAYOUT_2)); ?>">
 		<main id="main" class="site-main">
 
@@ -47,7 +48,7 @@ get_header();
                     <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(); ?> </a>
                         <div class = "info-container">
                             <h2 class = "card-title"><a href="<?php the_permalink(); ?>" title="Read"><?php the_title(); ?></a></h2>
-                            <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'initial_bid', true); ?> </p>
+                            <p class = "card-info">£ <?php echo get_post_meta(get_the_ID(), 'initial_bid', true); ?> </p>
                             <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'square_meters', true); ?> sqm</p>
                             <p class = "card-info rooms"><?php echo get_post_meta(get_the_ID(), 'number_of_rooms', true); ?> rooms</p>
                             <?php echo the_category(); ?>
@@ -76,7 +77,7 @@ get_header();
                     <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(); ?> </a>
                         <div class = "info-container">
                             <h2 class = "card-title"><a href="<?php the_permalink(); ?>" title="Read"><?php the_title(); ?></a></h2>
-                            <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'initial_bid', true); ?> </p>
+                            <p class = "card-info">£ <?php echo get_post_meta(get_the_ID(), 'initial_bid', true); ?> </p>
                             <p class = "card-info"><?php echo get_post_meta(get_the_ID(), 'square_meters', true); ?> sqm</p>
                             <p class = "card-info rooms"><?php echo get_post_meta(get_the_ID(), 'number_of_rooms', true); ?> rooms</p>
                             <?php echo the_category(); ?>
