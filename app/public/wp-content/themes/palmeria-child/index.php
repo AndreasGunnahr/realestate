@@ -60,18 +60,11 @@ get_header();
             </div>
             <h1 class = "selected-item-h1">All listings</h1>
             <div class = "grid-container">
-                <?php
-                    wp_reset_query();
-                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                    global $query;
-                    $query = new WP_Query(array(
-                        'post_type' => 'sales_item',
-                        'post_status' => 'publish',
-                        'posts_per_page' => 5,
-                        'paged' => $paged,
-                    ));
-
-                while ($query->have_posts()) : $query->the_post(); ?>
+            <?php
+            wp_reset_query();
+            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+            if(have_posts()) :
+                while (have_posts()) : the_post(); ?>
                     <div class = "card">
                     <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(); ?> </a>
                         <div class = "info-container">
@@ -84,16 +77,17 @@ get_header();
                             <p class = "card-info date"><?php echo get_the_date(); ?><p>
                         </div>
                     </div>
-                <?php endwhile; ?>
+                <?php endwhile; 
+                endif;
+                ?>
+            
             </div>
             <div class = "pagination">
                 <?php
-
                     echo paginate_links(array(
                         'base' => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
-                        'total' => $query->max_num_pages - 2,
                         'current' => $paged,
-                        'format' => '?page=%#%',
+                        'format' => '?page=%#%'
                     ));
                 ?> 
             </div>
@@ -105,6 +99,7 @@ get_header();
 
         endif;
         ?>
+        
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
